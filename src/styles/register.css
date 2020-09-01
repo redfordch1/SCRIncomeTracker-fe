@@ -1,0 +1,44 @@
+.register_h1 {
+  margin: 0px;
+}
+
+.register_form {
+  margin: 20px auto;
+}
+
+.register_username_password {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px;
+  margin: 10px auto;
+  width: 60%;
+}
+
+.register_label {
+  font-size: 1.5rem;
+  width: 20%;
+  padding: 10px 10px 10px 0px;
+}
+
+.register_input {
+  font-size: 1.2rem;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.register_button {
+  font-size: 1.2rem;
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid #28a4a4;
+  color: #28a4a4;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.register_form_Link {
+  margin: 30px 0px 0px 0px;
+}

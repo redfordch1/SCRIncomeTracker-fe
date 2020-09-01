@@ -1,0 +1,41 @@
+.main_card {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  width: 43%;
+  height: 65px;
+  margin: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.month_main_card {
+  font-size: 1.2rem;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  width: 48%;
+  height: 65px;
+  margin: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.x_delete {
+  background-color: transparent;
+  color: red;
+  border: none;
+  height: 20px;
+  padding: 8px;
+}
+
+.card_parent {
+  display: flex;
+}
+
+.date {
+  width: 90%;
+}
+
+p {
+  margin: 0px;
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.user_title {
+  font-family: "Shadows Into Light", cursive;
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+}
+
+.all_cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.month_all_cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.all_cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.final_total {
+  margin: 13px auto;
+  padding: 10px;
+  width: 90%;
+  border-top: 1px solid #999999;
+  font-size: 1.5rem;
+}
+
+.parent_title_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px auto;
+  border-bottom: 1px solid #999999;
+  width: 95%;
+  height: 105px;
+}
+
+.month_parent_title_link {
+  margin: 0px auto;
+  border-bottom: 1px solid #999999;
+  width: 95%;
+  padding: 10px 0px 10px 0px;
+}
+
+.create_total_link {
+  font-size: 1.2rem;
+  height: 33px;
+  width: 130px;
+  margin: 0px auto;
+  color: #28a4a4;
+  border: 1px solid #28a4a4;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button_parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.final_total_button {
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #28a4a4;
+  color: #28a4a4;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.delete_button {
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid red;
+  color: red;
+  height: 35px;
+  margin: 10px auto;
+}
+
+.bottom_line {
+  border-bottom: 1px solid #999999;
+  margin: 15px 0px 0px 0px;
+  width: 95%;
+}
+
+.custom-ui {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.modal_button1 {
+  border: none;
+  background-color: #28a4a4;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 80px;
+  padding: 5px;
+  margin: 20px 10px;
+}
+
+.modal_button2 {
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 150px;
+  padding: 5px;
+  margin: 20px 10px;
+}
