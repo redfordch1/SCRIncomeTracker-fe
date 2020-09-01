@@ -13,7 +13,10 @@ function Register(props) {
 
   const onRegisterSubmit = (form) => {
     axios
-      .post("http://localhost:5000/api/users/register", form)
+      .post(
+        "https://cosmoincometrackerbe.herokuapp.com/api/users/register",
+        form
+      )
       .then((res) => {
         props.history.push("/Login");
       })

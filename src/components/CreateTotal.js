@@ -14,7 +14,7 @@ function CreateTotal(props) {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/totals", form)
+      .post("https://cosmoincometrackerbe.herokuapp.com/api/totals", form)
       .then((res) => {
         console.log(res);
         props.history.push("/");

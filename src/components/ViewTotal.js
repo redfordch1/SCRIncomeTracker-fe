@@ -16,7 +16,7 @@ export default function ViewTotal(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/users/${user_ID}`)
+      .get(`https://cosmoincometrackerbe.herokuapp.com/api/users/${user_ID}`)
       .then((res) => {
         setUser(res.data);
         props.setIsLoggedIn(true);
@@ -28,7 +28,7 @@ export default function ViewTotal(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/totals/${user_ID}`)
+      .get(`https://cosmoincometrackerbe.herokuapp.com/api/totals/${user_ID}`)
       .then((res) => {
         setTotals(res.data);
       })
@@ -56,7 +56,7 @@ export default function ViewTotal(props) {
 
   const updateAllTotals = () => {
     axios
-      .get(`http://localhost:5000/api/totals/${user_ID}`)
+      .get(`https://cosmoincometrackerbe.herokuapp.com/api/totals/${user_ID}`)
       .then((res) => {
         setTotals(res.data);
       })
@@ -67,7 +67,9 @@ export default function ViewTotal(props) {
 
   const deleteAllTotals = () => {
     axios
-      .delete(`http://localhost:5000/api/totals/${user_ID}`)
+      .delete(
+        `https://cosmoincometrackerbe.herokuapp.com/api/totals/${user_ID}`
+      )
       .then((res) => {
         console.log(res);
         updateAllTotals();
@@ -88,7 +90,7 @@ export default function ViewTotal(props) {
 
   const addMonthlyTotal = () => {
     axios
-      .post("http://localhost:5000/api/month", form)
+      .post("https://cosmoincometrackerbe.herokuapp.com/api/month", form)
       .then((res) => {
         props.history.push("/MonthTotals");
       })

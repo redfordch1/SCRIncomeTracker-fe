@@ -5,7 +5,9 @@ import "../styles/totalCard.css";
 function MonthTotalCard(props) {
   const deleteTotal = () => {
     axios
-      .delete(`http://localhost:5000/api/month/${props.id}`)
+      .delete(
+        `https://cosmoincometrackerbe.herokuapp.com/api/month/${props.id}`
+      )
       .then((res) => {})
 
       .catch((err) => {

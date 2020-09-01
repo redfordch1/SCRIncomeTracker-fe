@@ -12,7 +12,7 @@ export default function MonthTotals(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/users/${user_ID}`)
+      .get(`https://cosmoincometrackerbe.herokuapp.com/api/users/${user_ID}`)
       .then((res) => {
         setUser(res.data);
       })
@@ -23,7 +23,7 @@ export default function MonthTotals(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/month/${user_ID}`)
+      .get(`https://cosmoincometrackerbe.herokuapp.com/api/month/${user_ID}`)
       .then((res) => {
         setMonthTotals(res.data);
       })
