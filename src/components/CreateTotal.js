@@ -8,6 +8,7 @@ function CreateTotal(props) {
   const [form, setForm] = useState({
     user_id: user_ID,
     total_for_day: 0,
+    date: d,
   });
 
   const onSubmitHandler = (e) => {
