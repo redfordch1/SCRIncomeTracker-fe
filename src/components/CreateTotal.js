@@ -4,7 +4,7 @@ import "../styles/createTotal.css";
 
 function CreateTotal(props) {
   const user_ID = localStorage.getItem("userID");
-  var d = new Date().toLocaleString("en-US", { timeZone: "America/Denver" });
+  var d = new Date().toLocaleString("en-US");
   const [form, setForm] = useState({
     user_id: user_ID,
     total_for_day: 0,
