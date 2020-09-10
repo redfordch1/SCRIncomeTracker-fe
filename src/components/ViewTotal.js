@@ -85,7 +85,6 @@ export default function ViewTotal(props) {
   const form1 = {
     user_id: user_ID,
     total_for_month: formattedTotal,
-    date: d,
   };
 
   const addMonthlyTotal = () => {
