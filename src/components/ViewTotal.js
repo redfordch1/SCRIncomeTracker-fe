@@ -82,10 +82,10 @@ export default function ViewTotal(props) {
 
   var formattedTotal = formatter.format(addedTotal);
 
-  const form = {
+  const [form, setForm] = useState({
     user_id: user_ID,
     total_for_month: formattedTotal,
-  };
+  });
 
   const addMonthlyTotal = () => {
     axios
