@@ -12,7 +12,7 @@ export default function ViewTotal(props) {
   const [totals, setTotals] = useState([]);
   var addedTotal;
   var numbsArray = [];
-  var d = new Date().toLocaleString("en-US", { timeZone: "America/Denver" });
+  var d = new Date().toLocaleString("en-US", { timeZone: "UTC" });
 
   useEffect(() => {
     axios
