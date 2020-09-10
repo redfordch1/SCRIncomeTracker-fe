@@ -4,15 +4,11 @@ import "../styles/createTotal.css";
 
 function CreateTotal(props) {
   const user_ID = localStorage.getItem("userID");
-  var d = new Date();
-  var year = d.getFullYear();
-  var mes = d.getMonth() + 1;
-  var dia = d.getDate();
-  var theDate = dia + "/" + mes + "/" + year;
+  var d = new Date().toLocaleString("en-US", { timeZone: "America/Denver" });
   const [form, setForm] = useState({
     user_id: user_ID,
     total_for_day: 0,
-    date: theDate,
+    date: d,
   });
 
   const onSubmitHandler = (e) => {
