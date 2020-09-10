@@ -10,8 +10,6 @@ function CreateTotal(props) {
     total_for_day: 0,
   });
 
-  console.log("this is the form", form);
-
   const onSubmitHandler = (e) => {
     e.preventDefault();
     axios
