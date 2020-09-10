@@ -82,11 +82,12 @@ export default function ViewTotal(props) {
 
   var formattedTotal = formatter.format(addedTotal);
 
+  const form = {
+    user_id: user_ID,
+    total_for_month: formattedTotal,
+  };
+
   const addMonthlyTotal = () => {
-    const form = {
-      user_id: user_ID,
-      total_for_month: formattedTotal,
-    };
     axios
       .post("https://cosmoincometrackerbe.herokuapp.com/api/month", form)
       .then((res) => {
