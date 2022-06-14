@@ -3,7 +3,7 @@ import axios from "axios";
 import "../styles/createTotal.css";
 
 function CreateTotal(props) {
-  const user_ID = localStorage.getItem("userID");
+  const user_ID = localStorage.getItem("userID"); 
   var d = new Date().toLocaleString("en-US", { timeZone: "UTC" });
   const [form, setForm] = useState({
     user_id: user_ID,
